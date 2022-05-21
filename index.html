@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Les petits plats</title>
+		<meta name="description" content="Trouvez la recette parfaite pour aujourd'hui !" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+		<link
+			rel="stylesheet"
+			crossorigin="anonymous"
+			href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css"
+			integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+"
+		/>
+	</head>
+	<body class="body">
+		<header class="header">
+			<object class="header__logo" data="./assets/logo.svg"></object>
+		</header>
+		<div class="research">
+			<form class="research__bar">
+				<input
+					class="research__bar__input"
+					placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette"
+					type="search"
+				/>
+				<button class="research__bar__submit" type="submit">
+					<i class="far fa-search"></i>
+				</button>
+			</form>
+			<aside class="research__filters"></aside>
+		</div>
+		<div class="research__fields">
+			<form class="research__fields__form ingredient__form">
+				<input
+					class="research__fields__form__input ingredient__input"
+					placeholder="Ingrédient"
+					type="search"
+				/>
+				<button class="research__fields__form__submit ingredient__button" type="button">
+					<i class="far fa-chevron-down ingredient__chevron"></i>
+				</button>
+			</form>
+			<aside class="research__fields__form__results__ingredient">
+				<ul class="ingredient__results ingredient__results__undisplayed"></ul>
+			</aside>
+			<form class="research__fields__form apparatus__form">
+				<input
+					class="research__fields__form__input apparatus__input"
+					placeholder="Appareil"
+					type="search"
+				/>
+				<button class="research__fields__form__submit apparatus__button" type="button">
+					<i class="far fa-chevron-down apparatus__chevron"></i>
+				</button>
+			</form>
+			<aside class="research__fields__form__results__apparatus">
+				<ul class="apparatus__results apparatus__results__undisplayed"></ul>
+			</aside>
+			<form class="research__fields__form ustensils__form">
+				<input
+					class="research__fields__form__input ustensils__input"
+					placeholder="Ustensiles"
+					type="search"
+				/>
+				<button class="research__fields__form__submit ustensils__button" type="button">
+					<i class="far fa-chevron-down ustensils__chevron"></i>
+				</button>
+			</form>
+			<aside class="research__fields__form__results__ustensils">
+				<ul class="ustensils__results ustensils__results__undisplayed"></ul>
+			</aside>
+		</div>
+		<main class="results"></main>
+		<script src="./scripts/main.js"></script>
+		<script src="./scripts/constructors/RecipeCard.js"></script>
+		<script src="./scripts/utils/dom.js"></script>
+		<script src="./scripts/utils/constants.js"></script>
+		<script src="./scripts/utils/filters.js"></script>
+		<script src="./scripts/utils/searchBar.js"></script>
+		<script src="./scripts/utils/filtersBar.js"></script>
+	</body>
+</html>
